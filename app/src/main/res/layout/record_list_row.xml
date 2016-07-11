@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/card_selector"
+    android:clickable="false"
+    android:elevation="5dp"
+    tools:targetApi="lollipop">
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@+id/txvReferencia"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#c5cae9">
+    </View>
+
+    <TextView
+        android:id="@+id/txvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnAddQtd"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16sp"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="#727272"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/btn_edtit_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnAddQtd"
+        android:background="@android:color/transparent"
+        android:padding="15dp"
+        android:tint="#c5cae9"
+        app:srcCompat="@drawable/ic_mode_edit_36dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btn_delete_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/divider2"
+        android:background="@android:color/transparent"
+        android:padding="15dp"
+        android:tint="#ffcdd2"
+        app:srcCompat="@drawable/ic_delete_36dp"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/btnSubQtd"
+        android:layout_alignStart="@+id/btnSubQtd"
+        android:layout_below="@+id/btn_edtit_card"
+        android:background="#c5cae9" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/btn_delete_card"
+        android:layout_alignTop="@+id/btn_edtit_card"
+        android:layout_toLeftOf="@+id/btn_edtit_card"
+        android:layout_toStartOf="@+id/btn_edtit_card"
+        android:background="#c5cae9" />
+
+    <ImageButton
+        android:id="@+id/btnAddQtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider4"
+        android:layout_toLeftOf="@+id/divider3"
+        android:layout_toStartOf="@+id/divider3"
+        android:background="@android:color/transparent"
+        android:padding="15dp"
+        android:tint="#c8e6c9"
+        app:srcCompat="@drawable/ic_add_circle_outline_36dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnSubQtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider2"
+        android:layout_toLeftOf="@+id/divider3"
+        android:layout_toStartOf="@+id/divider3"
+        android:background="@android:color/transparent"
+        android:padding="15dp"
+        android:tint="#ffcdd2"
+        app:srcCompat="@drawable/ic_remove_circle_outline_36dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txvQtd"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnObs"
+        android:layout_below="@+id/txvId"
+        android:layout_toLeftOf="@+id/divider2"
+        android:layout_toStartOf="@+id/divider2"
+        android:gravity="center_vertical|end"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:paddingEnd="2dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="2dp"
+        android:paddingStart="1dp"
+        android:singleLine="true"
+        android:textColor="#727272"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txvReferencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvId"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txvId"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#727272"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txvnome"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignLeft="@+id/txvId"
+        android:layout_alignStart="@+id/txvId"
+        android:layout_below="@+id/txvId"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/txvQtd"
+        android:layout_toStartOf="@+id/txvQtd"
+        android:gravity="center_vertical"
+        android:maxLines="4"
+        android:textColor="#727272"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvnome"
+        android:layout_alignStart="@+id/txvnome"
+        android:layout_below="@+id/txvnome"
+        android:gravity="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="#727272"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/btnObs"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/btnSubQtd"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/nliveo_transparent"
+        app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+    <LinearLayout
+        android:id="@+id/linearObs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvPrice"
+        android:layout_alignStart="@+id/txvPrice"
+        android:layout_below="@+id/btnObs"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/nliveo_transparent"
+            android:tint="#c5cae9"
+            app:srcCompat="@drawable/ic_comment_36dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txvObs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_observacao"
+            android:textColor="#727272"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txvTotalCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txvReferencia"
+        android:layout_alignBottom="@+id/txvReferencia"
+        android:layout_alignEnd="@+id/btn_edtit_card"
+        android:layout_alignRight="@+id/btn_edtit_card"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="#727272"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</RelativeLayout>
